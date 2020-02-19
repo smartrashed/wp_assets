@@ -11,7 +11,7 @@
 
 add_action('restrict_manage_posts','gwf_items_per_page_filtering');
 function gwf_items_per_page_filtering($post_type){
-    if('gainformspost' !== $post_type){
+    if('your_custom_post_name' !== $post_type){
         return; //filter post
     }
     if(isset($_GET['pageVal'])){
@@ -21,13 +21,13 @@ function gwf_items_per_page_filtering($post_type){
     }
     $paged = 1;
     query_posts(array( 'showposts'=> $items_per_page,
-        'post_type' => 'gainformspost',
+        'post_type' => 'your_custom_post_name',
         'posts_per_page' => $items_per_page,
         'paged' => get_query_var('paged')
     ));
     ?>
     <select class='page-select' name="pageVal">
-        <option value='5'><?php echo __('Select','gainforms'); ?></option>
+        <option value='5'><?php echo __('Select','textdomain'); ?></option>
         <option value='5'><?php echo __('5 Items per page','gainforms'); ?></option>
         <option value='10'><?php echo __('10 Items per page','gainforms'); ?></option>
         <option value='15'><?php echo __('15 Items per page','gainforms'); ?></option>
