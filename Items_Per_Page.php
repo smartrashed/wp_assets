@@ -28,11 +28,11 @@ function gwf_items_per_page_filtering($post_type){
     ?>
     <select class='page-select' name="pageVal">
         <option value='5'><?php echo __('Select','textdomain'); ?></option>
-        <option value='5'><?php echo __('5 Items per page','gainforms'); ?></option>
-        <option value='10'><?php echo __('10 Items per page','gainforms'); ?></option>
-        <option value='15'><?php echo __('15 Items per page','gainforms'); ?></option>
-        <option value='25'><?php echo __('25 Items per page','gainforms'); ?></option>
-        <option value='50'><?php echo __('50 Items per page','gainforms'); ?></option>
+        <option value='5'><?php echo __('5 Items per page','textdomain'); ?></option>
+        <option value='10'><?php echo __('10 Items per page','textdomain'); ?></option>
+        <option value='15'><?php echo __('15 Items per page','textdomain'); ?></option>
+        <option value='25'><?php echo __('25 Items per page','textdomain'); ?></option>
+        <option value='50'><?php echo __('50 Items per page','textdomain'); ?></option>
     </select>
     <?php
 }
